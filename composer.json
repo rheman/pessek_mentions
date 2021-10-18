@@ -1,0 +1,45 @@
+{
+	"name": "pessek/pessek_mentions",
+	"version": "4.0",
+	"type": "elgg-plugin",
+	"description": "Mentions",
+	"keywords": [
+		"elgg", "plugin"
+	],
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Hermand PESSEK",
+			"email": "rhemandaddy@gmail.com"
+		}
+	],
+	"extra": {
+		"installer-name": "pessek_mentions"
+	},
+	"require": {
+		"php": ">=7.4",
+		"composer/installers": "^1.0.8",
+		"npm-asset/at.js": "^1.5",
+		"php-extended/php-emoji-cheat-sheet": "^1.0",
+		"npm-asset/jquery.caret": "^0.3.1"
+	},
+	"autoload": {
+		"psr-0": {
+			"": "classes/"
+		}
+	},
+    "config": {
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "conflict": {
+        "elgg/elgg": "<4.0"
+   }
+}
